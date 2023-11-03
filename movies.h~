@@ -1,0 +1,18 @@
+#ifndef MOVIES
+#define MOVIES
+#include<iostream>
+#include <cstring>
+
+using namespace std;
+class Movie {
+public:
+  Media
+
+
+
+
+
+
+
+
+#endif
