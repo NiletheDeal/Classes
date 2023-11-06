@@ -9,10 +9,10 @@ using namespace std;
 class Movie : public Media{
 public:
   Movie();
-  virtual int getType();
+  int getType();
   char* getDirector();
-  int* getDuration();
-  float* getRating();
+  int getDuration();
+  float getRating();
 private:
   char directorMovie[30];
   int durationMovie;

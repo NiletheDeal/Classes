@@ -19,9 +19,9 @@ Media::Media() {
 char* Media::getTitle() {
   return title;
 }
-int* Media::getYear() {
-  return &year;
+int Media::getYear() {
+  return year;
 }
-int Medoa::getType() {
+int Media::getType() {
   return 0;
 }

@@ -1,4 +1,4 @@
-#ifnedf VIDEOGAMES
+#ifndef VIDEOGAMES
 #define VIDEOGAMES
 #include <iostream>
 #include <cstring>
@@ -9,9 +9,9 @@ using namespace std;
 class Videogames : public Media {
 public:
   Videogames();
-  virtual int getType();
+  int getType();
   char* getPublisher();
-  float* getRating();
+  float getRating();
 private:
   char publisherGame[30];
   float ratingGame;

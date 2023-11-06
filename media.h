@@ -9,7 +9,7 @@ class Media {
 public:
   Media();//on object creation get title, year, type
   char* getTitle();
-  int* getYear();
+  int getYear();
   virtual int getType();
 protected:
   int year; //All media has a year published

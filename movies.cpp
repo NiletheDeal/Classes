@@ -1,7 +1,7 @@
 #include <iostream>
 #include <cstring>
 #include "media.h"
-#include "movie.h"
+#include "movies.h"
 
 using namespace std;
 
@@ -26,11 +26,11 @@ char* Movie::getDirector() {
   return directorMovie;
 }
 
-int* Movie::getDuration() {
-  return &durationMovie;
+int Movie::getDuration() {
+  return durationMovie;
 }
-float* Movie::getRating() {
-  return &durationMovie;
+float Movie::getRating() {
+  return durationMovie;
 }
 int Movie::getType() {
   return 1;

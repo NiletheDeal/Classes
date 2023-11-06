@@ -18,7 +18,7 @@ Music :: Music() {
   cin >> durationMusic;
   cin.clear();
   cin.ignore(10000, '\n');
-  cout << "Please input the publisher of the Song: " << end;
+  cout << "Please input the publisher of the Song: " << endl;
   cin >> publisherMusic;
   cin.clear();
   cin.ignore(10000, '\n');
@@ -26,7 +26,7 @@ Music :: Music() {
 char* Music :: getArtist() {
   return artistMusic;
 }
-int* Music :: getDuration() {
+int Music :: getDuration() {
   return durationMusic;
 }
 char* Music :: getPublisher() {

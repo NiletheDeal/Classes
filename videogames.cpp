@@ -5,7 +5,7 @@
 
 using namespace std;
 
-Videogames:Videogames() {
+Videogames::Videogames() {
   for(int i = 0; i < 30; i++) {
     publisherGame[i] = '\0';
   }
@@ -19,9 +19,10 @@ Videogames:Videogames() {
   cin.ignore(10000, '\n');
 }
 char* Videogames :: getPublisher() {
-  return publisherGame;
+  char* ptr = publisherGame;
+  return ptr;
 }
-float* Videogames:: getRating() {
+float Videogames:: getRating() {
   return ratingGame;
 }
 int Videogames :: getType() {
