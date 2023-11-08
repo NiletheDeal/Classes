@@ -5,7 +5,7 @@
 
 using namespace std;
 
-Music :: Music() {
+Music :: Music() {//Run on creation of a music object, but after media constructor
   for (int i = 0; i < 30; i++) {
     artistMusic[i] = '\0';
     publisherMusic[i] = '\0';
@@ -23,15 +23,15 @@ Music :: Music() {
   cin.clear();
   cin.ignore(10000, '\n');
 }
-char* Music :: getArtist() {
+char* Music :: getArtist() {//returns artist of song
   return artistMusic;
 }
-int Music :: getDuration() {
+int Music :: getDuration() {//returns duration of song in seconds
   return durationMusic;
 }
-char* Music :: getPublisher() {
+char* Music :: getPublisher() {//returns the publisher of the song
   return publisherMusic;
 }
-int Music :: getType() {
+int Music :: getType() {//returns the ID number of all music(2)
   return 2;
 }

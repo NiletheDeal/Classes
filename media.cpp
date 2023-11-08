@@ -3,7 +3,7 @@
 #include "media.h"
 
 using namespace std;
-Media::Media() {
+Media::Media() {//Prompts user for common data of all 3 media types. Runs first whenever a child(movie, videogame, or music) is created
   for(int i = 0; i<30; i++) {
     title[i] = '\0';
   }
@@ -16,12 +16,12 @@ Media::Media() {
   cin.clear();
   cin.ignore(10000, '\n');
 }
-char* Media::getTitle() {
+char* Media::getTitle() {//returns the title of the media
   return title;
 }
-int Media::getYear() {
+int Media::getYear() {//returns the year of the meida
   return year;
 }
-int Media::getType() {
+int Media::getType() {//overwritten by all children of media
   return 0;
 }

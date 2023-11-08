@@ -8,9 +8,9 @@ using namespace std;
 class Media {
 public:
   Media();//on object creation get title, year, type
-  char* getTitle();
-  int getYear();
-  virtual int getType();
+  char* getTitle();//returns title of the media
+  int getYear();//returns the year it was created
+  virtual int getType();//overwritten by all children of media
 protected:
   int year; //All media has a year published
   char title[30]; //All media has a title
