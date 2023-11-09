@@ -15,8 +15,15 @@ which one can search and delete through by year or title.
 
 using namespace std;
 
+//Prototype Functions
 void ADD(vector<Media*>* mediaList);
+void PRINT(Media* media);
+void SEARCH(int Year, vector<Media*>* media);
+void SEARCH(char* Title, vector<Media*>* media);
+void DELETE(int Year, vector <Media*>* media);
+void DELETE(char* Title, vector <Media*>* media)
 
+  
 void ADD(vector<Media*>* mediaList) {//Add to the media
   char mediaType[15];
   cout << "What kind of media would you like to add? Movie, Music, or Videogame: " << endl;
@@ -36,6 +43,7 @@ void ADD(vector<Media*>* mediaList) {//Add to the media
     mediaList->push_back(song);
   }
 }
+
 void PRINT(Media* media) {
   cout << media->getTitle() << ",";
   cout << media->getYear() << endl;
@@ -95,6 +103,7 @@ void DELETE(int Year, vector <Media*>* media) {//Delete by year
     }
   }
 }
+
 void DELETE(char* Title, vector <Media*>* media) {//Delete by title
   vector<Media*>::iterator iterDelTtl;//goes through each slot in the medialist
   char input[15];
@@ -117,6 +126,7 @@ void DELETE(char* Title, vector <Media*>* media) {//Delete by title
     }
   }
 }
+
 int main() {
   char title[30];
   int year;
