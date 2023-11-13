@@ -21,7 +21,7 @@ void PRINT(Media* media);
 void SEARCH(int Year, vector<Media*>* media);
 void SEARCH(char* Title, vector<Media*>* media);
 void DELETE(int Year, vector <Media*>* media);
-void DELETE(char* Title, vector <Media*>* media)
+void DELETE(char* Title, vector <Media*>* media);
 
   
 void ADD(vector<Media*>* mediaList) {//Add to the media
